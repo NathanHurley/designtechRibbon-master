@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>DT_Ribbon(Paid)</Name>
+    <Assembly>DesignTechRibbonPaid.dll</Assembly>
+    <AddInId>6f58c367-a16c-4886-b768-334389fce351</AddInId>
+    <FullClassName>DesignTechRibbonPaid.App</FullClassName>
+    <VendorId>designtech.io</VendorId>
+    <VendorDescription>
+    ((Website:http://designtech.io/) (info@designtech.io)) 
+    </VendorDescription>
+  </AddIn>
+</RevitAddIns>
