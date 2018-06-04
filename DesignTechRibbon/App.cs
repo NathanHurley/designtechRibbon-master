@@ -46,7 +46,7 @@ namespace DesignTechRibbonPaid
      
             //Autodesk.Revit.UI.RibbonPanel aboutPanel = application.CreateRibbonPanel(tabName, "About");
             Autodesk.Revit.UI.RibbonPanel toolsPanel = application.CreateRibbonPanel(tabName, "Tools");
-            //Autodesk.Revit.UI.RibbonPanel viewsPanel = application.CreateRibbonPanel(tabName, "Views");
+            Autodesk.Revit.UI.RibbonPanel viewsPanel = application.CreateRibbonPanel(tabName, "Views");
             //Autodesk.Revit.UI.RibbonPanel importPanel = application.CreateRibbonPanel(tabName, "Import");
             //Autodesk.Revit.UI.RibbonPanel exportPanel = application.CreateRibbonPanel(tabName, "Export");
 
@@ -61,7 +61,7 @@ namespace DesignTechRibbonPaid
             CreateExportCategoryParametersButton(application, tabName, toolsPanel);
 
             //Views
-            //CreateSelectionFilterButton(application, tabName,viewsPanel);
+            CreateSelectionFilterButton(application, tabName, viewsPanel);
             //CreatePartPlansViewsButton(application, tabName, viewsPanel);
             //CreateInternalElevationsButton(application, tabName, viewsPanel);
             //CreateViewExtenderButton(application, tabName, viewsPanel);
@@ -184,7 +184,7 @@ namespace DesignTechRibbonPaid
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
 
             PushButtonData buttonData = new PushButtonData("cmdSelectionFilter",
-               "Selection\nFilter", thisAssemblyPath, "EssentialTools.Info"); //Make sure this class exists
+               "Selection\nFilter", thisAssemblyPath, "EssentialTools.SelectionFilter"); //Make sure this class exists
 
             PushButton pushButton = rp.AddItem(buttonData) as PushButton;
 
